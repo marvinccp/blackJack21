@@ -272,10 +272,9 @@ footer .footer-content {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 0;
+        margin: 27px 0;
         max-width: 1024px;
         padding-left: 90px;
-        height: 300px;
     }
 
     .carta {
@@ -324,7 +323,7 @@ footer .footer-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding-left: 160px;
-        margin: 20px auto 0 0px;
+        margin: 20px auto -50px 0;
         max-width: 1024px;
     }
      .carta {
@@ -348,7 +347,7 @@ footer .footer-content {
      }
 
      .nadieGana {
-         top: 10px;
+         top: 130px;
          left: 240px;
      }
 

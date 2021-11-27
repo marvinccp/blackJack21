@@ -272,10 +272,10 @@ footer .footer-content {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 20px 0;
+        margin: 10px 0;
         max-width: 1024px;
         padding-left: 90px;
-        height: 300px;
+        padding-top: 20;
     }
 
     .carta {
