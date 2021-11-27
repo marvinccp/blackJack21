@@ -1,0 +1,11 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "Proyecto realizado en calse de UDEMY",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marvin Berrio <marvinccp@gmail.com>",
+  "license": "MIT"
+}

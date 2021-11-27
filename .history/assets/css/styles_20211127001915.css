@@ -1,0 +1,44 @@
+:root {
+    --black-gradient: linear-gradient(180deg, black, rgb(9, 9, 9));
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --green-table:#2F4F30;
+}
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.game-container{
+    background-color: var(--green-table);
+    width: 100;
+
+}
+
+.logo-container {
+    width: 100vw;
+    height: 10vh;
+    background: var(--black-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#computadora-cartas,
+#jugador-cartas {
+    height: 240px;
+}

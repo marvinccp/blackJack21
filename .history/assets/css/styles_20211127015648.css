@@ -1,0 +1,91 @@
+:root {
+
+    /* colors */
+    --black-gradient: linear-gradient(180deg, #131313, rgb(0, 0, 0));
+    --blue-table:linear-gradient(360deg, #07410c, #335830);
+    --red-soft: linear-gradiente
+    font-family: 'DM Sans',
+    sans-serif;
+    font-family: 'Inter',
+    sans-serif;
+    font-family: 'Quicksand',
+    sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 16vh;
+    background: var(--black-gradient);
+}
+
+header img {
+    width: 120px;
+    align-self: center;
+    margin: 10px 0;
+
+}
+
+.game-container{
+
+    background: var(--blue-table);
+    width: 100%;
+    height: 85vh;
+    color: rgb(255, 255, 255);
+}
+
+.game-bottons-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+
+.game-bottons-container button{
+
+    width: 90px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 3px;
+    padding: 5px;
+    font-family: 'DM Sans',
+    sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.game-bottons-container .btn-new-game {
+    background: #29be1c
+}
+
+.carta {
+    position: relative;
+    width: 100px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#computadora-cartas,
+#jugador-cartas {
+    height: 240px;
+}

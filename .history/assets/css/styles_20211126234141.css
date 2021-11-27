@@ -1,0 +1,41 @@
+:root{
+    --black-gradient: linear-gradient(180deg, black, rgb(9, 9, 9));
+}
+
+html, body {
+    margin: 0px;
+    padding:0;
+    background-color: #2F4F30;
+}
+.header {
+    display: flex;
+    background: var(--black-gradient);
+    height: 15vh;
+}
+.logo-container{
+    display: flex;
+    width: 90%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container .logo {
+    width: 30%;
+
+   
+}
+
+
+.carta {
+    position: relative;
+    width: 150px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+#computadora-cartas, #jugador-cartas {
+    height: 240px;
+}

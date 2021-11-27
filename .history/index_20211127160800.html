@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./">
+    <title>Blackjack</title>
+    <script defer src="assets/js/underscore-min.js"></script>
+    <script defer src="assets/js/juego.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        class="logo"
+        src="./assets/imgs/logo-black-jack.png"
+        alt="logo-black-jack"
+      />
+    </header>
+    <main class="game-container">
+      <div class="game-bottons-container">
+        <button id="btnNuevo" class="btn btn-new-game">New game</button>
+        <button id="btnPedir" disabled="disabled" class="btn btn-start-game">
+          Start
+        </button>
+        <button id="btnDetener" disabled="disabled" class="btn btn-stop-game">
+          Stop
+        </button>
+      </div>
+      <section class='container-players'>
+        <div class="row-player1">
+          <div class="container-title-points">
+            <h1>Marvin - <small>0</small></h1>
+            <div id="jugador-cartas" class="divCartas">
+              <!-- <img class="carta" src="assets/cartas/2C.png"> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="row-computer">
+          <div class="container-title-points">
+            <h1>Computadora <span ><small>0</small></span></h1>
+            <div id="computadora-cartas" class="divCartas">
+              <!-- <img class="carta" src="assets/cartas/3C.png"> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class='footer-content'>
+        <p>conexionStudio.com 2021</p>
+      </div>
+    </footer>
+  </body>
+</html>

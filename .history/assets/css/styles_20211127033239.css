@@ -1,0 +1,134 @@
+:root {
+
+    /* colors */
+    --black-gradient: linear-gradient(180deg, #131313, rgb(0, 0, 0));
+    --blue-table:linear-gradient(360deg, #07410c, #335830);
+    --red-soft: linear-gradient(120deg, #b33338, #dd3830);
+    --blue-soft: linear-gradient(120deg, #0a49d1, #403dd7);
+    --gray-soft: linear-gradient(120deg, #9a9a9a, #858585);
+    font-family: 'DM Sans',
+    sans-serif;
+    font-family: 'Inter',
+    sans-serif;
+    font-family: 'Quicksand',
+    sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 16vh;
+    background: var(--black-gradient);
+}
+
+header img {
+    width: 120px;
+    align-self: center;
+    margin: 10px 0;
+
+}
+
+.game-container{
+
+    background: var(--blue-table);
+    width: 100%;
+    height: 84vh;
+    color: rgb(255, 255, 255);
+}
+
+.game-bottons-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    width: 100%;
+}
+
+.game-bottons-container button{
+
+    width: 90px;
+    border-radius: 2px;
+    border: none;
+    margin: 0 3px;
+    padding: 5px;
+    font-family: 'DM Sans',
+    sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.game-bottons-container .btn-new-game {
+    color: white;
+    background: var(--blue-soft);
+    cursor:pointer
+}
+
+.game-bottons-container .btn-stop-game {
+    background: var(--red-soft);
+    color: white;
+cursor:pointer
+}
+
+.game-bottons-container .btn-start-game {
+    background: #29be1c;
+    color: white;
+cursor:pointer
+}
+
+.btn-game-off{
+
+    background:var(--gray-soft);
+    color: white;
+}
+
+
+.carta {
+    position: relative;
+    width: 100px;
+    left: 100px;
+    margin-left: -75px;
+}
+
+ .container-players{
+     width: 100%;
+     height: auto;
+     display: grid;
+     gr
+     justify-content: center;
+     align-items: flex-start;
+     padding-left: 20px;
+     height: 500px;
+     margin-top: -90px;
+ }
+
+ .container-players .title-player-points{
+     display: flex;
+     position: relative;
+     flex-direction: column;   
+ }
+ 
+ .row-player1{
+
+    width: 100%;
+    height: 250px;
+ }
+ 
