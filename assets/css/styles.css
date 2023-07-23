@@ -162,7 +162,7 @@ header img {
 
 
 .divCartas{
-    background-color: #bd0da2;
+    /* background-color: #bd0da2; */
     margin: 40px;
 }
 
@@ -287,7 +287,7 @@ footer .footer-content {
         height: 60vh;
       }
       .carta{
-        width: 130px;
+        width: 120px;
       }
 
       .winComputer{
