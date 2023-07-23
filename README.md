@@ -1,2 +1,2 @@
 #blackjack
-proyecto realizado en clase de JavaScript en UDEMY
+proyecto realizado con Javascript, html5 y css. esta primera versión no cuenta con función mutiplayer
