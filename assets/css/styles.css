@@ -4,7 +4,7 @@
     --black-gradient: linear-gradient(180deg, #131313, rgb(0, 0, 0));
     --blue-table: linear-gradient(360deg, #07410c, #335830);
     --red-soft: linear-gradient(120deg, #b33338, #dd3830);
-    --blue-soft: linear-gradient(120deg, #0a49d1, #403dd7);
+    --blue-soft: linear-gradient(120deg, #043db8, #2e2ca9, #0805a2);
     --gray-soft: linear-gradient(120deg, #9a9a9a, #858585);
     --gold-points: linear-gradient(20deg, rgb(4, 4, 4), rgb(48, 48, 48), rgba(201, 201, 201, 0.385));
     font-family: 'DM Sans',
@@ -28,71 +28,80 @@ html {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.icon {
+    fill: invert(12%) sepia(76%) saturate(4542%) hue-rotate(332deg) brightness(92%) contrast(99%);
+
+}
+body{
+    height: 100vh;
+}
+
 header {
-    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-width: 320px;
-    height: 16vh;
+    height: 10vh;
     background: var(--black-gradient);
 }
 
 header img {
-    width: 120px;
-    align-self: center;
+    width: 90px;
     margin: 10px 0;
 
 }
 
 .game-container {
 
-    background: var(--blue-table);
+    background: var(--blue-soft);
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     color: rgb(255, 255, 255);
 }
 
 .game-bottons-container {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    height: 10vh;
     width: 100%;
+    gap: 19px;
+    padding:  0 0 0;
 }
 
 .game-bottons-container button {
 
-    width: 90px;
+    width: 100px;
     border-radius: 2px;
     border: none;
     margin: 0 3px;
     padding: 5px;
     font-family: 'DM Sans',
         sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 
 }
 
 .game-bottons-container .btn-new-game {
     color: white;
-    background: var(--blue-soft);
-    cursor: pointer
+    background: rgb(235, 138, 12);
+    cursor: pointer;
+    border-radius: 4px;
+
 }
 
 .game-bottons-container .btn-stop-game {
     background: var(--red-soft);
     color: white;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .game-bottons-container .btn-start-game {
     background: #29be1c;
     color: white;
     cursor: pointer
+    
 }
 
 .btn-game-off {
@@ -114,11 +123,10 @@ header img {
 
 .container-players {
     width: 100%;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    padding-left: 20px;
-    margin: 10px 0px 0 0px;
-    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-players .title-player-points {
@@ -126,13 +134,18 @@ header img {
     position: relative;
     flex-direction: column;
     max-width: 1024px;
+
 }
 
 .row-player1,
 .row-computer {
     width: 100%;
-    height: 220px;
-    max-width: 1024px;
+    height: 28vh;
+    max-width: 1150px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
 }
 
 .container-title-points h1 {
@@ -146,8 +159,11 @@ header img {
 
 }
 
-.row-computer {
-    margin-top: -5px;
+
+
+.divCartas{
+    background-color: #bd0da2;
+    margin: 40px;
 }
 
 .row-computer .span {
@@ -182,19 +198,19 @@ header img {
     /* border-radius: 50%; */
 }
 
-.greenWin{
+.greenWin {
     background: linear-gradient(30deg, rgb(54, 175, 20), rgb(139, 250, 83));
 }
 
 .winComputer {
     color: rgb(255, 255, 255);
     position: absolute;
-    top: -42px;
-    left: 220px;
+    top: -85px;
+    right: 110px;
     font-size: 2rem;
     background-image: url('../imgs/robot-winner.png');
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -203,12 +219,12 @@ header img {
 .winPlayer1 {
     position: absolute;
     color: #f4f4f4;
-    top: -42px;
-    left: 220px;
+    top: -85px;
+    right: 110px;
     font-size: 2rem;
     background-image: url('../imgs/player-winner.png');
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -217,11 +233,11 @@ header img {
 .nadieGana {
     position: absolute;
     color: #f4f4f4;
-    top: 140px;
-    left: 220px;
+    top: -125px;
+    left: 160px;
     background-image: url('../imgs/no-winner.png');
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -231,14 +247,11 @@ footer {
     display: flex;
     font-family: 'DM Sans',
         sans-serif;
-    font-size: 1rem;
+    font-size: 1.25rem;
     background: var(--black-gradient);
-    margin-bottom: 0;
-    padding: 0;
-    width: 100%;
-    height: 4vh;
-    text-align: center;
+    height: 5vh;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -264,106 +277,31 @@ footer .footer-content {
 
 }
 
-
-
-@media(min-width:768px) {
-
-    .container-players {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 20px 0;
-        max-width: 1024px;
-        padding-left: 90px;
-        height: 300px;
+@media(min-width:768px){
+    .container-players{
+        flex-direction: row;
+      
     }
+      .row-player1,
+      .row-computer{
+        height: 60vh;
+      }
+      .carta{
+        width: 130px;
+      }
 
-    .carta {
-        position: relative;
-        width: 115px;
-        left: 100px;
-        margin-left: -70px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+      .winComputer{
+        right: 80;
+        top: 350;
+      }
 
-    }
+      .winPlayer1{
+        right: 50;
+        top: 150;
+      }
 
-    .container-cartas-computer {
-        position: relative;
-        margin: 0 0 0 20px;
-    }
-
-    .row-computer {
-        margin-top: 0px;
-        margin-left: -20px;
-    }
-    
-    .winPlayer1 {
-       
-        top: 220px;
-        left: 105px;
-    }
-    .winComputer {
-        top: 220px;
-        left: 130px;
-    }
-    
-    .nadieGana {
-        top: 250px;
-        left: 260px;
-    }
-    
-    .game-bottons-container {
-        padding-top: 10px;
-    }
-}
-
-@media(min-width:1024px) {
-    .container-players {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 160px;
-        margin: 20px auto 0 0px;
-        max-width: 1024px;
-    }
-     .carta {
-         position: relative;
-         width: 125px;
-         left: 100px;
-         margin-left: -70px;
-         margin-top: 20px;
-         margin-bottom: 10px;
-
-     }
-     .winPlayer1 {
-
-         top: 260px;
-         left: 105px;
-     }
-
-     .winComputer {
-         top: 260px;
-         left: 130px;
-     }
-
-     .nadieGana {
-         top: 10px;
-         left: 240px;
-     }
-
-}
-
-
-
-@media(min-width:1280px) {
-    .container-players {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding-left: 140px;
-        margin: 50px auto 0 128px;
-        max-width: 1024px;
-    }
-
+      .nadieGana{
+        right: 250;
+        top: 250;
+      }
 }
